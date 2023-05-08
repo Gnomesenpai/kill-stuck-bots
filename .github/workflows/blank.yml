@@ -16,4 +16,4 @@ jobs:
         with:
           version: '1.12.x'
       - name: Compile plugin
-        run: spcomp -iAnotherIncludeDirectory ${{ github.workspace }}/kil-stuck-bots.sp -o ${{ github.workspace }}/plugin.smx
+        run: spcomp ${{ github.workspace }}/kil-stuck-bots.sp -o ${{ github.workspace }}/plugin.smx
