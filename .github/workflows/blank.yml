@@ -16,4 +16,4 @@ jobs:
         with:
           version: '1.12.x'
       - name: Compile plugin
-        run: spcomp -iAnotherIncludeDirectory kil-stuck-bots.sp -o output/plugin.smx
+        run: spcomp -iAnotherIncludeDirectory ./kil-stuck-bots.sp -o output/plugin.smx
