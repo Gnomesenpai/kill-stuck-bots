@@ -1,0 +1,16 @@
+name: Compile SourcePawn plugin
+
+on:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+steps:
+- uses: actions/checkout@v3
+
+- uses: rumblefrog/setup-sp@master
+  with:
+    version: '1.12.x'
+
+- run: spcomp -iAnotherIncludeDirectory kil-stuck-bots.sp -o output/plugin.smx
