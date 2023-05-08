@@ -1,3 +1,4 @@
+#include <sourcemod>
 
 public Plugin myinfo =
 {
